@@ -1,0 +1,14 @@
+#box {
+    background-color: blue;
+    color: white;
+
+}
+h1,h2,h3{
+    font-family:Arial, Helvetica, sans-serif;
+    color:red;
+
+}
+button{
+    background-color: green;
+
+}
