@@ -6,7 +6,7 @@ body {
 
 
 .container {
-  background-color: lightcoral;
+  background-color: rgb(218, 61, 33);
   border: 2px solid black;
   display: flex;
   justify-content: center;     
