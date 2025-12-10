@@ -38,28 +38,31 @@ h1 {
     margin-top: 10px;
     font-size: 20px;
 }
-/*product decription styling */
+/* Product Description */
 .description {
-    color: dimgray;
-    font-size: 14px;
-    margin: 10px 0;
+    color: dimgray;                  /* Gray text */
+    font-size: 14px;                 /* Small readable text */
+    margin: 10px 0;                  /* Space above and below */
 }
-/* price styling */
-.price {
-    color: red;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-.bottom{
-    background-color:blue;
-    color:white;
-    padding:10px 20px;
-    border: none;
-    border-radius:5px;
-}
-button:hover{
-    background-color:darkblue;
-    cursor:pointer;
 
+/* Product Price */
+.price {
+    color: red;                      /* Red price text */
+    font-weight: bold;               /* Bold text */
+    margin-bottom: 15px;             /* Space below price */
+}
+
+/* Button Styling */
+button {
+    background-color: blue;          /* Blue button */
+    color: white;                    /* White text */
+    padding: 10px 20px;  
+      /* Inner space (top-bottom, left-right) */
+    border: none;                    /* No border */
+    border-radius: 5px;              /* Rounded button corners */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: darkblue;      /* Darker blue on hover */
 }
