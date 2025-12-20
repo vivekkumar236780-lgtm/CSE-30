@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress{
+            background-color: red;
+            height: 4px;
+            animation: load 1s ease-in-out 1;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 122px;
+            background-color: rgb(255, 0, 144);
+        }
+        main{
+            height: 899px;
+            background-color: blue;
+        }
+        @keyframes load{
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 60vw;
+            }
+            100%{
+                width:100vw;
+            }
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        img{
+            animation: rotate 1s ease-in infinte;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <h1>5 TIME CHAMPION MUMBAI INDIANS</h1>
+    <main>
+        <img src="https://tse3.mm.bing.net/th/id/OIP.NU4D4BJzWANggqn9YWbG6QHaEq?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" width="422px">
+
+    </main>
+    
+</body>
+</html>
