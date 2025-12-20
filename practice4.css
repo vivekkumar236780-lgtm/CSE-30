@@ -4,7 +4,7 @@
     border-radius: 50%;
     border: 20px solid blue;
     border-top: 20px solid red;
-    animation: spinAnimate;
+    animation: spinAnimate 2s ease-in-out 0s infinite normal;
 }
 @keyframes spinAnimate{
     from{
