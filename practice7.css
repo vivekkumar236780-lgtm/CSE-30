@@ -8,74 +8,98 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9; /* Light background for the page */
 }
 
 .label {
-  border: 2px solid black;
-  width: 270px;
+  border: 3px solid #4a90e2; /* Blue border for decoration */
+  width: 90%;
+  max-width: 270px;
   margin: 20px auto;
-  padding: 0 7px;
+  padding: 15px 10px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  background: linear-gradient(135deg, #ffffff, #f0f8ff); /* Subtle gradient background */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.label:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
 }
 
 header h1 {
   text-align: center;
   margin: -4px 0;
-  letter-spacing: 0.15px
+  letter-spacing: 0.15px;
+  color: #2c3e50; /* Dark blue text */
+  font-weight: 900;
 }
 
 p {
   margin: 0;
   display: flex;
   justify-content: space-between;
+  color: #34495e; /* Dark gray text */
 }
 
 .divider {
-  border-bottom: 1px solid #888989;
-  margin: 2px 0;
+  border-bottom: 2px solid #bdc3c7; /* Lighter divider */
+  margin: 5px 0;
 }
 
 .bold {
   font-weight: 800;
+  color: #e74c3c; /* Red for bold text */
 }
 
 .large {
-  height: 10px;
+  height: 12px;
+  background: linear-gradient(to right, #3498db, #2980b9); /* Blue gradient bar */
+  border-radius: 6px;
 }
 
 .large, .medium {
-  background-color: black;
   border: 0;
+  border-radius: 6px;
 }
 
 .medium {
-  height: 5px;
+  height: 6px;
+  background: linear-gradient(to right, #e67e22, #d35400); /* Orange gradient bar */
 }
 
 .small-text {
   font-size: 0.85rem;
+  color: #7f8c8d; /* Gray for small text */
 }
-
 
 .calories-info {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  background-color: #ecf0f1; /* Light gray background */
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
 }
 
 .calories-info h2 {
   margin: 0;
+  color: #27ae60; /* Green for calories header */
 }
 
 .left-container p {
   margin: -5px -2px;
   font-size: 2em;
   font-weight: 700;
+  color: #f39c12; /* Orange for large numbers */
 }
 
 .calories-info span {
   margin: -7px -2px;
   font-size: 2.4em;
   font-weight: 700;
+  color: #9b59b6; /* Purple for span */
 }
 
 .right {
@@ -91,12 +115,74 @@ p {
 }
 
 .daily-value p:not(.no-divider) {
-  border-bottom: 1px solid #888989;
+  border-bottom: 1px solid #bdc3c7;
+  padding: 5px 0;
 }
 
 .note {
   font-size: 0.6rem;
   margin: 5px 0;
-  padding:0 8px;
-  text-indent:-8px;
+  padding: 0 8px;
+  text-indent: -8px;
+  color: #95a5a6; /* Light gray for notes */
+  background-color: #f8f9fa; /* Very light background */
+  border-left: 3px solid #3498db; /* Blue accent border */
+  padding-left: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .label {
+    width: 95%;
+    padding: 10px 8px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .left-container p {
+    font-size: 1.5em;
+  }
+
+  .calories-info span {
+    font-size: 2em;
+  }
+
+  .large {
+    height: 10px;
+  }
+
+  .medium {
+    height: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .label {
+    width: 98%;
+    margin: 10px auto;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+  }
+
+  .left-container p {
+    font-size: 1.2em;
+  }
+
+  .calories-info span {
+    font-size: 1.8em;
+  }
+
+  .p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .calories-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
